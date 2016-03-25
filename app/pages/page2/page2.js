@@ -1,4 +1,5 @@
 import {Page} from 'ionic-angular';
+import {Page1} from '/pages/page1'
 
 
 @Page({
