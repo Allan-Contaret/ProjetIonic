@@ -43,5 +43,12 @@ module.exports = {
       'angular2': path.resolve('node_modules/angular2')
     },
     extensions: ['', '.js']
-  }
+  },
+
+  plugins: [
+    'angular2-annotations',
+    'transform-decorators-legacy',
+    'transform-class-properties',
+    'transform-flow-strip-types'
+  ]
 };

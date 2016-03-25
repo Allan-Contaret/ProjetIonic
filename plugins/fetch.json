@@ -1,8 +1,16 @@
 {
-    "cordova-plugin-device": {
+    "cordova-plugin-whitelist": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-device"
+            "id": "cordova-plugin-whitelist"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-statusbar": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-statusbar"
         },
         "is_top_level": true,
         "variables": {}
@@ -15,14 +23,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-whitelist": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-whitelist"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-splashscreen": {
         "source": {
             "type": "registry",
@@ -31,10 +31,10 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-statusbar": {
+    "cordova-plugin-device": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-statusbar"
+            "id": "cordova-plugin-device"
         },
         "is_top_level": true,
         "variables": {}
