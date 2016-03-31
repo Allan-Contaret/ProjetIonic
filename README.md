@@ -1,3 +1,3 @@
-# ProjetIonic
+# QuizzTheme
 
 Application de quizz par thèmes
