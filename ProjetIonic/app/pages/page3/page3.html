@@ -1,0 +1,18 @@
+<ion-navbar *navbar hideBackButton>
+  <ion-title>Quiz - Sports</ion-title>
+</ion-navbar>
+
+<ion-content class="has-header components-demo">
+
+    <div *ngFor="#question of questions ; #i = index">  
+        <ion-title class="title">Question {{i+1}} - Sport</ion-title>
+        <img [src]="question.imageUrl">      
+        <b> <p class="question">{{question.text}}</p></b>        
+        <button *ngFor="#answer of question.answers" block
+                (click)="select(answer)"
+                [style.background-color]="getColor(answer)">
+            {{answer.text}}
+        </button>
+    </div>
+
+</ion-content>

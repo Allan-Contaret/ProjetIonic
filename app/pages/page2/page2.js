@@ -1,5 +1,7 @@
 import {Page, NavController} from 'ionic-angular'
-import {Page3} from '../page3/page3'
+import {Page3} from '../sports/page3'
+import {Musique} from '../Musique/musique'
+import {Jeux} from '../jeux_video/jeux_video'
 
 
 @Page({
@@ -12,7 +14,7 @@ import {Page3} from '../page3/page3'
 
   <ion-card>
 
-    <img src="/images/sports.jpg"/>
+    <img src="http://www.gorimouski.com/upload/16/images/blog/tell%20what%20u%20think%20sports.jpg"/>
 
     <ion-card-content>
       <h2 class="card-title">
@@ -25,7 +27,7 @@ import {Page3} from '../page3/page3'
 
     <ion-row no-padding>
       <ion-col text-center>
-        <button clear small danger (click)="goToPage3()">
+        <button clear small danger (click)="goToSports()">
           <ion-icon name=''></ion-icon>
           JOUER!
         </button>
@@ -37,7 +39,7 @@ import {Page3} from '../page3/page3'
   <ion-card>
 
     <div>
-      <img src="/images/chant.png"/>
+      <img src="http://www.france2.fr/emissions/sites/default/files/images/logo-site/2013/02/05/noubliez-pas-les-paroles-6201-39149.png"/>
     </div>
 
     <ion-card-content>
@@ -51,7 +53,7 @@ import {Page3} from '../page3/page3'
 
     <ion-row no-padding>
       <ion-col text-center>
-        <button clear small danger>
+        <button clear small danger (click)="goToMusique()">
           <ion-icon name=''></ion-icon>
           JOUER!
         </button>
@@ -63,7 +65,7 @@ import {Page3} from '../page3/page3'
   <ion-card>
 
     <div>
-      <img src="/images/jeux.jpg"/>
+      <img src="http://www.bm-dijon.fr/OpacWebAloes/Images/Paragraphes/game/JEUX-V~1.JPG"/>
     </div>
 
     <ion-card-content>
@@ -77,7 +79,7 @@ import {Page3} from '../page3/page3'
 
     <ion-row no-padding>
       <ion-col text-center>
-        <button clear small danger>
+        <button clear small danger (click)="goToJeux()">
           <ion-icon name=''></ion-icon>
           JOUER!
         </button>
@@ -91,8 +93,14 @@ import {Page3} from '../page3/page3'
   constructor(nav: NavController) {
     this.nav = nav
   }
-  goToPage3() {
+  goToSports() {
     this.nav.push(Page3)
+  }
+  goToMusique() {
+    this.nav.push(Musique)
+  }
+  goToJeux() {
+    this.nav.push(Jeux)
   }
 
 }
