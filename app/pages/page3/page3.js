@@ -6,11 +6,12 @@ import {Page} from 'ionic-angular';
 })
 export class Page3 {
 
+
 	constructor() {
 		this.questions = [
-			{
-				
+			{				
 				text: 'Avec combien de joueurs se joue le Football (par équipe) ?',
+				imageUrl: '/images/football.jpg',
 				answers: [
 					{
 						text: '11',
@@ -33,18 +34,19 @@ export class Page3 {
 				]
 			},{
 				text: 'Avec combien de joueurs se joue le BasketBall (par équipe et sur le terrain) ?',
+				imageUrl : '/images/basketball.jpg',
 				answers: [
 					{
-						text: '5',
-						isCorrect: true,
+						text: '22',
+						isCorrect: false,
 						selectedByUser: false
 					},{
 						text: '11',
 						isCorrect: false,
 						selectedByUser: false
 					},{
-						text: '22',
-						isCorrect: false,
+						text: '5',
+						isCorrect: true,
 						selectedByUser: false
 					},{
 						text: '3',
@@ -55,10 +57,11 @@ export class Page3 {
 				]
 			},{
 				text: 'Quel est ce sport ?',
+				imageUrl: '/images/footus.jpg',
 				answers: [
 					{
-						text: 'Football Américain',
-						isCorrect: true,
+						text: 'Football',
+						isCorrect: false,
 						selectedByUser: false
 					},{
 						text: 'Danse',
@@ -69,15 +72,17 @@ export class Page3 {
 						isCorrect: false,
 						selectedByUser: false
 					},{
-						text: 'Football',
-						isCorrect: false,
+						text: 'Football Américain',
+						isCorrect: true,
 						selectedByUser: false
 					}
 
 				]
 			},{
 				text: 'Qui détient le record de titres majeurs?',
+				imageUrl: '/images/tennis.jpg',
 				answers: [
+				
 					{
 						text: 'Ken Rosewall',
 						isCorrect: true,
@@ -99,14 +104,15 @@ export class Page3 {
 				]
 			},{
 				text: 'Comment appelle-t-on l\'équipe de France de Handball ?',
+				imageUrl: '/images/handball.jpg',
 				answers: [
 					{
-						text: 'Les experts',
-						isCorrect: true,
-						selectedByUser: false
-					},{
 						text: 'Les bourrés',
 						isCorrect: false,
+						selectedByUser: false
+					},{
+						text: 'Les experts',
+						isCorrect: true,
 						selectedByUser: false
 					},{
 						text: 'Les Geeks',
@@ -128,7 +134,6 @@ export class Page3 {
 	}
 
 	getColor(answer) {
-		console.log(answer)
 		const defaultColor = '#387ef5'
 		if (!answer.selectedByUser) return defaultColor
 		return answer.isCorrect ? 'green' : 'red'

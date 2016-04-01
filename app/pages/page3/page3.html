@@ -4,17 +4,10 @@
 
 <ion-content class="has-header components-demo">
 
-    <p> <ion-title id="question"> Question 1 - Sport</ion-title> </p>
-
-    <p id="img"> <img src="http://france3-regions.francetvinfo.fr/sites/regions_france3/files/styles/home_first/public/assets/images/2015/12/26/football_tir.jpg?itok=M-1Gie09" height = 150px width = 250px/> </p>
-
-
-    <p> <ion-title id="question"> Question 2 - Sport</ion-title> </p>
-
-    <p id="img"> <img src="http://www.sportsansar.com/wp-content/uploads/2016/02/basketball-wide.jpg" height = 150px width = 250px/> </p>
-
-    <div *ngFor="#question of questions">
-        <p>{{question.text}}</p>
+    <div *ngFor="#question of questions ; #i = index">  
+        <ion-title class="title">Question {{i+1}} - Sport</ion-title>
+        <img [src]="question.imageUrl">      
+        <b> <p class="question">{{question.text}}</p></b>        
         <button *ngFor="#answer of question.answers" block
                 (click)="select(answer)"
                 [style.background-color]="getColor(answer)">
@@ -22,26 +15,4 @@
         </button>
     </div>
 
-   
-
-    <p> <ion-title id="question"> Question 3 - Sport</ion-title> </p>
-
-    <p id="img"> <img src="http://barnettsports.oxatis.com/Files/70091/Img/08/foot-us1000.jpg" height = 150px width = 250px/> </p>
-
-
-    
-    <p> <ion-title id="question"> Question 4 - Sport</ion-title> </p>
-
-    <p id="img"> <img src="http://tcfroges.fr/wp-content/uploads/2016/01/tennis.jpg" height = 150px width = 250px/> </p>
-
-    
-
-    
-    <p> <ion-title id="question"> Question 5 - Sport</ion-title> </p>
-
-    <p id="img"> <img src="http://cdn.sports.fr/images/sportsdatas/contest/9/division/Division-1.jpg" height = 150px width = 250px/> </p>
-
-    
-
-    
 </ion-content>

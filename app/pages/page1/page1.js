@@ -6,7 +6,7 @@ import {Page2} from '../page2/page2'
   <ion-title>QuizzTheme</ion-title>
 </ion-navbar>
 
-<ion-content class="has-header components-demo">
+<ion-content padding class="page1">
 
     <ion-list>
 
