@@ -12,7 +12,7 @@ import {Page3} from '../page3/page3'
 
   <ion-card>
 
-    <img src="http://www.gorimouski.com/upload/16/images/blog/tell%20what%20u%20think%20sports.jpg"/>
+    <img src="/images/sports.jpg"/>
 
     <ion-card-content>
       <h2 class="card-title">
@@ -37,7 +37,7 @@ import {Page3} from '../page3/page3'
   <ion-card>
 
     <div>
-      <img src="http://www.france2.fr/emissions/sites/default/files/images/logo-site/2013/02/05/noubliez-pas-les-paroles-6201-39149.png"/>
+      <img src="/images/chant.png"/>
     </div>
 
     <ion-card-content>
@@ -63,7 +63,7 @@ import {Page3} from '../page3/page3'
   <ion-card>
 
     <div>
-      <img src="http://www.bm-dijon.fr/OpacWebAloes/Images/Paragraphes/game/JEUX-V~1.JPG"/>
+      <img src="/images/jeux.jpg"/>
     </div>
 
     <ion-card-content>
