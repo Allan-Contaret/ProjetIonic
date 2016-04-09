@@ -8,24 +8,9 @@ import {Page2} from '../page2/page2'
 
 <ion-content padding class="page1">
 
-    <ion-list>
-
-      <ion-item>
-          <ion-label floating name="username">Username</ion-label>
-          <ion-input type="text" value=""></ion-input>  
-      </ion-item>
-
-
-      <ion-item>
-        <ion-label floating>Password</ion-label>
-        <ion-input type="password" value=""></ion-input>
-      </ion-item>
-
-    </ion-list>
-
     <div padding>
         
-      <button block (click)="goToPage2()">LOG IN</button>
+      <button block (click)="goToPage2()">ENTRER</button>
     </div>
 
 </ion-content>
