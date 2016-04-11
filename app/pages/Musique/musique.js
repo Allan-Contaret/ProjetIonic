@@ -107,7 +107,7 @@ export class Musique {
         answers: [
           {
             text: 'French kiss oh la la la',
-            isCorrect: true,
+            isCorrect: false,
             selectedByUser: false
           },{
             text: 'Ça va vite oh la la la',
